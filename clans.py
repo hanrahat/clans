@@ -10,6 +10,9 @@
 import time
 import sys
 
+TRUE = 1
+FALSE = 0
+
 """
 The traditional game of Missionaries and Cannibal
 
@@ -229,7 +232,7 @@ print_population_map(clan_0, clan_1)
 # Play the game
 
 direction = None
-still_alive = 1
+still_alive = TRUE
 
 while (Being.upper_level_clan_0 + Being.upper_level_clan_1) > 0 and still_alive:
 
@@ -255,7 +258,7 @@ while (Being.upper_level_clan_0 + Being.upper_level_clan_1) > 0 and still_alive:
    
     if ((Being.upper_level_clan_0 != 0) and Being.upper_level_clan_0 < Being.upper_level_clan_1) or \
         ((Being.lower_level_clan_0 != 0) and (Being.lower_level_clan_0 < Being.lower_level_clan_1)):
-        still_alive = 0
+        still_alive = FALSE
 
 # Game over
 
