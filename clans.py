@@ -124,11 +124,11 @@ def get_passenger(boarding_order):
     side of the void as the vehicle
     """
     
-    need_passenger = 1
+    need_passenger = TRUE
 
     while(need_passenger):
 
-        need_passenger = 0
+        need_passenger = FALSE
         name = None
 
         # Make sure that only a current named being is selected
@@ -162,7 +162,7 @@ def get_passenger(boarding_order):
                 print(name, "is on the opposite", LAUNCH_SITE, ". \nPick someone on the", \
                       LAUNCH_SITE, "with the", VEHICLE ,".\n")
                 name = None
-                need_passenger = 1
+                need_passenger = TRUE
 
         if name != None:
             return name
