@@ -2,6 +2,8 @@ clans
 =====
 Title: Clan vs Clan - A Deadly Serious Game!
 
+License: Apache Public License 2.0
+
 Description:
 Based on the missionaries and cannibals game. Two clans are on one side of a
 void and must cross safely to the other side.  There is only one vehicle and
